@@ -13,7 +13,6 @@ public class OptionsFrame extends JFrame
     {
         setIconImage(new ImageIcon(Logic.getPath("back_s.png")).getImage());
         setTitle("Memory - Options");
-        setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(50, 50,  250, 300);
         setResizable(false);
@@ -62,6 +61,7 @@ public class OptionsFrame extends JFrame
         panel_b.add(b1);
         panel_b.add(b2);
         panel_b.add(b3);
+        setVisible(true);
     }
 
     private JButton makeButton(int w, int h)

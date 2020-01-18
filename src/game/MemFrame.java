@@ -17,8 +17,7 @@ public class MemFrame extends JFrame
       w = Logic.getWidth();
       h = Logic.getHeight();
       setBounds(30, 30, w, h);
-      setTitle("Memory by Mariusz v 1.2.0");
-      setVisible(true);
+      setTitle("Memory by Mariusz v 1.3.0");
       setResizable(false);
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setLayout(new BorderLayout());
@@ -35,5 +34,6 @@ public class MemFrame extends JFrame
       Score board = new Score();
       panel1.add(new CardsHandling(board));
       panel2.add(board);
+      setVisible(true);
 }
 }
